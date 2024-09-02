@@ -8,6 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.jayway.jsonpath.JsonPath;
+import com.qa.rest.utils.BaseTest;
 import com.qa.rest.utils.FileNameConstants;
 
 import io.restassured.RestAssured;
@@ -15,7 +16,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import net.minidev.json.JSONArray;
 
-public class PostAPIRequestUsingFile {
+public class PostAPIRequestUsingFile extends BaseTest{
 	@Test
 	public void postAPIRequest() {
 		

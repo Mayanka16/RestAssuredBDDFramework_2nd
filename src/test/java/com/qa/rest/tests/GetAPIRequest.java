@@ -23,8 +23,9 @@ public class GetAPIRequest {
 		.statusCode(200)
 		.statusLine("HTTP/1.1 200 OK")
 		.header("Content-Type", "application/json; charset=utf-8")
-		.extract()
+		.extract()		
 		.response();
+		
 				
 		Assert.assertTrue(response.getBody().asString().contains("bookingid"));
 
