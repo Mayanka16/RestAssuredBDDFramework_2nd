@@ -12,5 +12,13 @@ public class FileNameConstants {
 	public static final String BASE_PATH = "//Users//mayanka//eclipse-workspace//RestAssuredBDDFramework_2nd//src//test//resources//";// ".src//test//resources//";
 
 	public static final String POST_API_REQUEST_BODY = BASE_PATH + "/PostAPIRequestBody.txt";
+	
+	public static final String JSON_SCHEMA = BASE_PATH + "/expectedJSONSchema.txt";
+	
+	public static final String TOKEN_REQUEST_BODY = BASE_PATH + "/tokenRequestAPI.txt";
+	
+	public static final String PUT_REQUEST_BODY = BASE_PATH + "/putRequestAPI.txt";
+	
+	
 
 }
