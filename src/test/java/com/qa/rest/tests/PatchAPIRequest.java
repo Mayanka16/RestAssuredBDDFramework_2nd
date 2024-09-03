@@ -115,7 +115,12 @@ public class PatchAPIRequest {
 			
 			String token  = JsonPath.read(tokenAPIResponse.body().asString(), "$.token");
 			
-			
+			/*
+			 * Author - Mayanka Sao
+			 * Date - 03/Sep/2024
+			 * Method - patchAPIRequest() 
+			 * Put Method to update the data 
+			 */
 			RestAssured 
 				.given()
 					.contentType(ContentType.JSON)

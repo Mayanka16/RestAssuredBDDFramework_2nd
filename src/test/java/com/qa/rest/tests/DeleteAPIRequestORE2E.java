@@ -1,5 +1,9 @@
 package com.qa.rest.tests;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -10,6 +14,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.jayway.jsonpath.JsonPath;
+import com.qa.rest.utils.BaseTest;
 import com.qa.rest.utils.FileNameConstants;
 
 import io.restassured.RestAssured;
@@ -17,11 +22,11 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import net.minidev.json.JSONArray;
 
-public class DeleteAPIRequestORE2E {
+public class DeleteAPIRequestORE2E extends BaseTest{
 
 	@Test
 
-	public void deleteAPIRequestOrE2E() {
+	public void deleteAPIRequestOrE2E () {
 
 		try {
 			String postAPIRequestBody = FileUtils.readFileToString(new File(FileNameConstants.POST_API_REQUEST_BODY),
@@ -69,7 +74,7 @@ public class DeleteAPIRequestORE2E {
 			
 			JSONArray firstName = JsonPath.read(response.body().asString() , "$.booking..firstname");
 			String firstNameValue = (String) firstName.get(0);
-			Assert.assertEquals(firstNameValue, "API Testing");
+			AssertJUnit.assertEquals(firstNameValue, "API Testing");
 					
 			
 			// fetching bookingId and can be directly stored in int because the value is not stored in an array and directly can access
