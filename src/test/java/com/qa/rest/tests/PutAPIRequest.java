@@ -21,7 +21,7 @@ public class PutAPIRequest {
 	
 @Test
 
-public void postAPIRequest() {
+public void putAPIRequest() {
 		
 		
 		try {
@@ -34,7 +34,7 @@ public void postAPIRequest() {
 				/*
 				 * Author - Mayanka Sao
 				 * Date - 02/Sep/2024
-				 * Method - postAPIRequest() 
+				 * Method - putAPIRequest() 
 				 * Read txt file from FileNameConstants class and create POST call
 				 */
 					
@@ -57,7 +57,7 @@ public void postAPIRequest() {
 		/*
 		 * Author - Mayanka Sao
 		 * Date - 01/Sep/2024
-		 * Method - postAPIRequest() 
+		 * Method - putAPIRequest() 
 		 * Using JSONPath Expression fetch the value using JSONArray
 		 */
 		
@@ -73,7 +73,7 @@ public void postAPIRequest() {
 		/*
 		 * Author - Mayanka Sao
 		 * Date - 02/Sep/2024
-		 * Method - postAPIRequest() 
+		 * Method - putAPIRequest()  
 		 * Using Get method to validate using bookingId received from POSt response
 		 */
 		
@@ -91,7 +91,7 @@ public void postAPIRequest() {
 		/*
 		 * Author - Mayanka Sao
 		 * Date - 02/Sep/2024
-		 * Method - postAPIRequest() 
+		 * Method - putAPIRequest() 
 		 * token Generation POST call
 		 */
 		
